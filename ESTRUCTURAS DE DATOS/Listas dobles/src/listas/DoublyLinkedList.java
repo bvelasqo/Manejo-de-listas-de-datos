@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author s103e28
+ * @author Brandon velasquez
  * @param <T>
  */
 public class DoublyLinkedList<T extends Number & Comparable> implements Ilist<T> {
@@ -18,7 +18,7 @@ public class DoublyLinkedList<T extends Number & Comparable> implements Ilist<T>
     public DoublyLinkedList() {
         head = tail = null;
     }
-    
+
     //agregar datos al inicio
     @Override
     public void add(T d) {
@@ -41,9 +41,9 @@ public class DoublyLinkedList<T extends Number & Comparable> implements Ilist<T>
             tail.getPreviousNode().setNextNode(tail);
         }
     }
-    
+
 //  insertar nuevos nodos ordenados de mayor a menor e impedir datos
-//  duplicados (si el dato ya se encuentra en la lista, 
+//  duplicados (si el dato ya se encuentra en la lista,
 //  no ingresarlo y lanzar excepción).
     @Override
     public void addOrdered(T d)  {
@@ -116,7 +116,7 @@ public class DoublyLinkedList<T extends Number & Comparable> implements Ilist<T>
         }
         return "Dato no encontrado";
     }
-    
+
     @Override
     public void deleteLast() throws Exception {
         if (isEmpty()) {
@@ -169,7 +169,7 @@ public class DoublyLinkedList<T extends Number & Comparable> implements Ilist<T>
 
         return false;
     }
-    //Insertar nuevos nodos después de un dato especificado por el usuario 
+    //Insertar nuevos nodos después de un dato especificado por el usuario
     //(si no se encuentra el dato, lanzar excepción).
     public void addNode(T afterOf, T d){
         DoubleNode<T> current = this.head;

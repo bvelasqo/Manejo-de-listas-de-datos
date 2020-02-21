@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author s208e19
+ * @author Brandon velasquez
  */
 public interface Ilist<T> {
 

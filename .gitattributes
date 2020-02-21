@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+git remote add origin https://github.com/bvelasqo/ManejoDeListas.git
+git push -u origin master

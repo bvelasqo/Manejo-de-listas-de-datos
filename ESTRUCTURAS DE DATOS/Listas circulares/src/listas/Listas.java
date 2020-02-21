@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author s208e19
+ * @author Brandon velasquez
  */
 public class Listas {
 
@@ -32,7 +32,7 @@ public class Listas {
         System.out.println(listDouble1.showData());
         CircularDoublyLinkedList<Integer> listDouble2 = listDouble1.DivideList(55);
         System.out.println(listDouble2.showData());
-        
+
         CircularSinglyLinkedList<Integer> listSingly1 = new CircularSinglyLinkedList<>();
         listSingly1.addOrdered(22);
         listSingly1.addOrdered(44);
@@ -56,7 +56,7 @@ public class Listas {
         listSingly2.addOrdered(777);
         System.out.println("Lista Simple");
         System.out.println(listSingly2.showData());
-        
+
         CircularSinglyLinkedList<Integer> listSingly3 = listSingly1.joinList(listSingly2);
         System.out.println(listSingly3.showData());
     }

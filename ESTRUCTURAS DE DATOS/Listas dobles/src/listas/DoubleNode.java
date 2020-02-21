@@ -7,25 +7,25 @@ package listas;
 
 /**
  *
- * @author s103e28
+ * @author Brandon velasquez
  */
 public final class DoubleNode<T> {
 
     private T data;
     private DoubleNode<T> nextNode;
     private DoubleNode<T> previousNode;
-    
+
     public DoubleNode(T d,DoubleNode pn, DoubleNode nn){
         setData(d);
         setPreviousNode(pn);
         setNextNode(nn);
     }
-    
+
     public DoubleNode(T d){
        this(d,null,null) ;
     }
 
-    
+
     /**
      * @return the data
      */

@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author s103e28
+ * @author Brandon velasquez
  * @param <T>
  */
 public class CircularDoublyLinkedList<T extends Comparable> implements Ilist<T> {
@@ -93,7 +93,7 @@ public class CircularDoublyLinkedList<T extends Comparable> implements Ilist<T> 
     public boolean isEmpty() {
         return head == null;
     }
-    
+
     public DoubleNode<T> Exist(T d) throws Exception{
         if(isEmpty())throw new Exception("don´t exist dates");
         else{

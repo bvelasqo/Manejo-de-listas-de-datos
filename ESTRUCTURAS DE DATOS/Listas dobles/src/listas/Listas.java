@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author s208e19
+ * @author Brandon velasquez
  */
 public class Listas {
 
@@ -16,7 +16,7 @@ public class Listas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         DoublyLinkedList<Integer> myDoublelist = new DoublyLinkedList<>();
         myDoublelist.addOrdered(66);
         myDoublelist.addOrdered(11);
@@ -26,7 +26,7 @@ public class Listas {
         myDoublelist.addOrdered(22);
         myDoublelist.addOrdered(101);
         myDoublelist.addNode(33, 32);
-        myDoublelist.addNode(100, 32);        
+        myDoublelist.addNode(100, 32);
         System.out.println(myDoublelist.deleteNode(11));
         System.out.println(myDoublelist.deleteNode(101));
         System.out.println(myDoublelist.deleteNode(100));
