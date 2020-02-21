@@ -22,7 +22,7 @@ public class ListaDoble<T extends Estudiantes> implements Ilist<T> {
     @Override
     public void add(T d) {
         if (isEmpty()) {
-            head = tail = new NodoDoble<>(d);
+            head = tail = new NodoDoble<>(d,null,head);
         } else {
             head = new NodoDoble<>(d, null, head);
             head.getNextNode().setPreviousNode(head);
@@ -75,6 +75,7 @@ public class ListaDoble<T extends Estudiantes> implements Ilist<T> {
 
         return "No existe ese estudiante";
     }
+    
     public String searchNeighborhood(String barrio) {
 
         NodoDoble<T> current = this.head;

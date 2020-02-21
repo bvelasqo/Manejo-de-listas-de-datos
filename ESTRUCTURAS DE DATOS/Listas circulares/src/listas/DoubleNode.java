@@ -3,26 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package materia;
+package listas;
 
 /**
  *
  * @author s103e28
- * @param <T>
  */
-public final class NodoDoble<T> {
+public final class DoubleNode<T> {
 
     private T data;
-    private NodoDoble<T> nextNode;
-    private NodoDoble<T> previousNode;
+    private DoubleNode<T> nextNode;
+    private DoubleNode<T> previousNode;
     
-    public NodoDoble(T d,NodoDoble pn, NodoDoble nn){
+    public DoubleNode(T d,DoubleNode pn, DoubleNode nn){
         setData(d);
         setPreviousNode(pn);
         setNextNode(nn);
     }
     
-    public NodoDoble(T d){
+    public DoubleNode(T d){
        this(d,null,null) ;
     }
 
@@ -44,28 +43,28 @@ public final class NodoDoble<T> {
     /**
      * @return the nextNode
      */
-    public NodoDoble<T> getNextNode() {
+    public DoubleNode<T> getNextNode() {
         return nextNode;
     }
 
     /**
      * @param nextNode the nextNode to set
      */
-    public void setNextNode(NodoDoble<T> nextNode) {
+    public void setNextNode(DoubleNode<T> nextNode) {
         this.nextNode = nextNode;
     }
 
     /**
      * @return the previousNode
      */
-    public NodoDoble<T> getPreviousNode() {
+    public DoubleNode<T> getPreviousNode() {
         return previousNode;
     }
 
     /**
      * @param previousNode the previousNode to set
      */
-    public void setPreviousNode(NodoDoble<T> previousNode) {
+    public void setPreviousNode(DoubleNode<T> previousNode) {
         this.previousNode = previousNode;
     }
 }
